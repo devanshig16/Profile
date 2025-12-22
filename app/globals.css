@@ -5,7 +5,7 @@
 /* Typography and spacing refinements */
 @layer base {
   html {
-    color: #000000;
+    color: #1a1a1a;
   }
 
   body {
@@ -13,7 +13,129 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: white;
-    color: #000000;
+    color: #1a1a1a;
+    position: relative;
+  }
+
+  /* Noise texture overlay for warmth - very subtle */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0.03;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    background-size: 200px 200px;
+  }
+}
+
+/* Floating blob animations - GPU accelerated */
+@keyframes float-terracotta {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(30px, -40px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 30px) scale(0.95);
+  }
+}
+
+@keyframes float-sage {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(-35px, 25px) scale(1.05);
+  }
+}
+
+@keyframes float-peach {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    transform: translate(25px, 35px) scale(1.08);
+  }
+  75% {
+    transform: translate(-30px, -25px) scale(0.92);
+  }
+}
+
+/* Subtle background treatment - warmth without distraction */
+@layer components {
+  .subtle-background {
+    background-color: #fafafa;
+    /* Very soft radial gradients from top and bottom - barely perceptible */
+    /* Light noise texture overlay - very subtle */
+    background-image: 
+      radial-gradient(circle at 50% 0%, rgba(251, 250, 248, 0.4) 0%, transparent 50%),
+      radial-gradient(circle at 50% 100%, rgba(251, 250, 248, 0.3) 0%, transparent 50%),
+      url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E");
+    background-size: 100% 100%, 100% 100%, 200px 200px;
+    background-position: center, center, 0 0;
+    background-repeat: no-repeat, no-repeat, repeat;
+  }
+
+  /* Link micro-interactions - underline with opacity change */
+  .link-interactive {
+    position: relative;
+    transition: opacity 200ms ease;
+  }
+
+  .link-interactive:hover {
+    opacity: 0.75;
+  }
+
+  .link-interactive::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1.5px;
+    background: linear-gradient(to right, #d4a574, #a8b89a);
+    transition: width 250ms ease;
+  }
+
+  .link-interactive:hover::after {
+    width: 100%;
+  }
+
+  /* Button hover interactions - slight scale */
+  .button-interactive {
+    transition: transform 200ms ease;
+    will-change: transform;
+  }
+
+  .button-interactive:hover {
+    transform: scale(1.05);
+  }
+
+  .button-interactive:active {
+    transform: scale(0.98);
+  }
+
+  /* Content area - constrained width with generous padding, centered */
+  .content-container {
+    max-width: 65ch; /* Optimal reading width */
+    padding: 3rem 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: 768px) {
+    .content-container {
+      padding: 4rem 2.5rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .content-container {
+      padding: 5rem 3rem;
+    }
   }
 }
 

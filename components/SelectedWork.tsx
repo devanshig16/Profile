@@ -1,9 +1,14 @@
+"use client";
+
+import Section from "./Section";
+import SectionHeading from "./SectionHeading";
+import ProjectCard from "./ProjectCard";
+
 /**
  * Selected work section - Three featured projects
  * Showcases concrete examples of work
+ * Uses SectionHeading with decorative line
  */
-import ProjectCard from "./ProjectCard";
-
 export default function SelectedWork() {
   const projects = [
     {
@@ -24,18 +29,23 @@ export default function SelectedWork() {
   ];
 
   return (
-    <section className="py-20 md:py-24">
-      <h2 className="text-3xl md:text-4xl font-light mb-16 text-black tracking-tight">Selected work</h2>
-      <div>
-        {projects.map((project, index) => (
-          <ProjectCard
-            key={index}
-            title={project.title}
-            description={project.description}
-          />
-        ))}
+    <Section bgColor="light-terracotta" className="py-20 md:py-28 lg:py-32">
+      <div className="max-w-3xl mx-auto px-6 md:px-10 lg:px-12">
+        <div className="content-container">
+          <SectionHeading delay={0.1}>Selected work</SectionHeading>
+          <div>
+            {projects.map((project, index) => (
+              <ProjectCard
+                key={index}
+                title={project.title}
+                description={project.description}
+                index={index}
+              />
+            ))}
+          </div>
+        </div>
       </div>
-    </section>
+    </Section>
   );
 }
 

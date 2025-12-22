@@ -1,7 +1,7 @@
 /**
  * Main page - Single scroll layout
  * Composes all sections in narrative order
- * Uses semantic HTML and accessible structure
+ * Includes floating background blobs for visual interest
  */
 import Hero from "@/components/Hero";
 import Intro from "@/components/Intro";
@@ -11,22 +11,20 @@ import HowIThink from "@/components/HowIThink";
 import Background from "@/components/Background";
 import Closing from "@/components/Closing";
 import Footer from "@/components/Footer";
+import FloatingBlobs from "@/components/FloatingBlobs";
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
-      <div className="max-w-3xl mx-auto px-6 md:px-10 lg:px-12">
-        <Hero />
-        <Intro />
-        <WhatIDo />
-        <SelectedWork />
-        <HowIThink />
-        <Background />
-        <Closing />
-      </div>
-      <div className="max-w-3xl mx-auto px-6 md:px-10 lg:px-12">
-        <Footer />
-      </div>
+    <main className="min-h-screen relative">
+      <FloatingBlobs />
+      <Hero />
+      <Intro />
+      <WhatIDo />
+      <SelectedWork />
+      <HowIThink />
+      <Background />
+      <Closing />
+      <Footer />
     </main>
   );
 }
