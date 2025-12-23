@@ -158,9 +158,15 @@
   /* Content area - constrained width with generous padding, centered */
   .content-container {
     max-width: 65ch; /* Optimal reading width */
-    padding: 3rem 1.5rem;
+    padding: 2rem 1rem;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  @media (min-width: 640px) {
+    .content-container {
+      padding: 3rem 1.5rem;
+    }
   }
 
   @media (min-width: 768px) {
@@ -172,6 +178,26 @@
   @media (min-width: 1024px) {
     .content-container {
       padding: 5rem 3rem;
+    }
+  }
+
+  /* Mobile optimizations */
+  @media (max-width: 640px) {
+    /* Improve touch targets */
+    button, a {
+      min-height: 44px;
+      min-width: 44px;
+    }
+    
+    /* Prevent text size adjustment on iOS */
+    html {
+      -webkit-text-size-adjust: 100%;
+    }
+    
+    /* Smooth scrolling on mobile */
+    html {
+      scroll-behavior: smooth;
+      -webkit-overflow-scrolling: touch;
     }
   }
 }

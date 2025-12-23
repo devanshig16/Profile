@@ -11,7 +11,7 @@ export default function FloatingBlobs() {
     <div className="fixed inset-0 pointer-events-none overflow-hidden -z-10">
       {/* Terracotta blob - slowest movement */}
       <div
-        className="absolute w-96 h-96 rounded-full opacity-40 blur-3xl"
+        className="absolute w-64 h-64 md:w-96 md:h-96 rounded-full opacity-40 blur-3xl"
         style={{
           background: "radial-gradient(circle, #d4a574 0%, transparent 70%)",
           top: "10%",
@@ -23,7 +23,7 @@ export default function FloatingBlobs() {
       
       {/* Sage blob - medium speed */}
       <div
-        className="absolute w-80 h-80 rounded-full opacity-30 blur-3xl"
+        className="absolute w-56 h-56 md:w-80 md:h-80 rounded-full opacity-30 blur-3xl"
         style={{
           background: "radial-gradient(circle, #a8b89a 0%, transparent 70%)",
           top: "60%",
@@ -35,7 +35,7 @@ export default function FloatingBlobs() {
       
       {/* Peach blob - faster movement */}
       <div
-        className="absolute w-72 h-72 rounded-full opacity-35 blur-3xl"
+        className="absolute w-48 h-48 md:w-72 md:h-72 rounded-full opacity-35 blur-3xl"
         style={{
           background: "radial-gradient(circle, #f4c2a1 0%, transparent 70%)",
           bottom: "15%",
@@ -47,7 +47,7 @@ export default function FloatingBlobs() {
       
       {/* Additional smaller blob for depth */}
       <div
-        className="absolute w-64 h-64 rounded-full opacity-30 blur-3xl"
+        className="absolute w-40 h-40 md:w-64 md:h-64 rounded-full opacity-30 blur-3xl"
         style={{
           background: "radial-gradient(circle, #d4a574 0%, transparent 70%)",
           top: "40%",
@@ -59,7 +59,7 @@ export default function FloatingBlobs() {
       
       {/* New colorful blobs */}
       <div
-        className="absolute w-88 h-88 rounded-full opacity-25 blur-3xl"
+        className="absolute w-56 h-56 md:w-96 md:h-96 rounded-full opacity-25 blur-3xl"
         style={{
           background: "radial-gradient(circle, #ffb347 0%, transparent 70%)",
           top: "25%",
@@ -70,7 +70,7 @@ export default function FloatingBlobs() {
       />
       
       <div
-        className="absolute w-72 h-72 rounded-full opacity-28 blur-3xl"
+        className="absolute w-48 h-48 md:w-72 md:h-72 rounded-full opacity-28 blur-3xl"
         style={{
           background: "radial-gradient(circle, #4ecdc4 0%, transparent 70%)",
           bottom: "30%",
@@ -81,7 +81,7 @@ export default function FloatingBlobs() {
       />
       
       <div
-        className="absolute w-80 h-80 rounded-full opacity-22 blur-3xl"
+        className="absolute w-56 h-56 md:w-80 md:h-80 rounded-full opacity-22 blur-3xl"
         style={{
           background: "radial-gradient(circle, #b19cd9 0%, transparent 70%)",
           top: "70%",

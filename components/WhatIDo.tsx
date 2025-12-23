@@ -18,8 +18,8 @@ export default function WhatIDo() {
   return (
     <Section bgColor="soft-sage" className="py-20 md:py-28 lg:py-32 relative overflow-hidden">
       {/* Colorful accent shapes */}
-      <div className="absolute top-1/4 right-10 w-36 h-36 rounded-full bg-gradient-to-br from-ocean/20 to-mint/20 blur-2xl"></div>
-      <div className="absolute bottom-1/4 left-10 w-40 h-40 rounded-full bg-gradient-to-br from-amber/20 to-sunset/20 blur-2xl"></div>
+      <div className="absolute top-1/4 right-10 w-28 h-28 md:w-36 md:h-36 rounded-full bg-gradient-to-br from-ocean/20 to-mint/20 blur-2xl"></div>
+      <div className="absolute bottom-1/4 left-10 w-32 h-32 md:w-40 md:h-40 rounded-full bg-gradient-to-br from-amber/20 to-sunset/20 blur-2xl"></div>
       <div className="max-w-3xl mx-auto px-6 md:px-10 lg:px-12 relative z-10">
         <motion.div
           className="content-container"

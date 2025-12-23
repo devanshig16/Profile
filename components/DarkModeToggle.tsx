@@ -15,10 +15,11 @@ export default function DarkModeToggle() {
   return (
     <button
       onClick={toggleTheme}
-      className="fixed top-6 right-6 z-50 p-3 rounded-full bg-white dark:bg-dark-surface-2 border border-gray-200 dark:border-gray-800 shadow-lg hover:shadow-xl transition-all duration-300 group"
+      className="fixed top-4 right-4 md:top-6 md:right-6 z-50 p-3 md:p-3 rounded-full bg-white dark:bg-dark-surface-2 border border-gray-200 dark:border-gray-800 shadow-lg hover:shadow-xl active:scale-95 transition-all duration-300 group touch-manipulation"
       aria-label="Toggle dark mode"
+      style={{ WebkitTapHighlightColor: 'transparent' }}
     >
-      <div className="relative w-6 h-6">
+      <div className="relative w-6 h-6 md:w-6 md:h-6">
         {/* Sun icon */}
         <motion.svg
           className="absolute inset-0 w-6 h-6 text-amber dark:text-amber/0"

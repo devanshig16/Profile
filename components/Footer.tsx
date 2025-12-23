@@ -18,7 +18,7 @@ export default function Footer() {
     >
       <div className="max-w-3xl mx-auto px-6 md:px-10 lg:px-12">
         <nav aria-label="Contact and social links" className="flex justify-center">
-          <ul className="flex flex-wrap gap-6 text-base md:text-lg leading-relaxed justify-center items-center">
+          <ul className="flex flex-wrap gap-4 md:gap-6 text-sm sm:text-base md:text-lg leading-relaxed justify-center items-center">
             <li>
               <a
                 href="https://github.com"

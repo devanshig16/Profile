@@ -27,7 +27,7 @@ export default function SectionHeading({
       transition={{ duration: 0.5, delay, ease: "easeOut" }}
       className={className}
     >
-      <h2 className="text-3xl md:text-4xl font-light text-near-black dark:text-dark-text tracking-tight mb-4">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl font-light text-near-black dark:text-dark-text tracking-tight mb-4">
         {children}
       </h2>
       {/* Decorative gradient accent line with more vibrant colors */}

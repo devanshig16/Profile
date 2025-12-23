@@ -12,8 +12,8 @@ export default function Intro() {
   return (
     <Section bgColor="warm-cream" className="py-20 md:py-28 lg:py-32 relative overflow-hidden">
       {/* Colorful accent shapes */}
-      <div className="absolute top-10 left-5 w-24 h-24 rounded-full bg-gradient-to-br from-amber/20 to-sunset/20 blur-xl"></div>
-      <div className="absolute bottom-10 right-5 w-32 h-32 rounded-full bg-gradient-to-br from-mint/20 to-ocean/20 blur-xl"></div>
+      <div className="absolute top-10 left-5 w-20 h-20 md:w-24 md:h-24 rounded-full bg-gradient-to-br from-amber/20 to-sunset/20 blur-xl"></div>
+      <div className="absolute bottom-10 right-5 w-24 h-24 md:w-32 md:h-32 rounded-full bg-gradient-to-br from-mint/20 to-ocean/20 blur-xl"></div>
       
       <div className="max-w-3xl mx-auto px-6 md:px-10 lg:px-12 relative z-10">
         <motion.div

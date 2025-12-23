@@ -13,8 +13,8 @@ export default function Background() {
   return (
     <Section bgColor="warm-cream" className="py-20 md:py-28 lg:py-32 relative overflow-hidden">
       {/* Colorful accent shapes */}
-      <div className="absolute top-20 right-20 w-28 h-28 rounded-full bg-gradient-to-br from-lavender/20 to-rose/20 blur-xl animate-pulse-glow"></div>
-      <div className="absolute bottom-20 left-20 w-32 h-32 rounded-full bg-gradient-to-br from-ocean/20 to-mint/20 blur-xl"></div>
+      <div className="absolute top-20 right-20 w-20 h-20 md:w-28 md:h-28 rounded-full bg-gradient-to-br from-lavender/20 to-rose/20 blur-xl animate-pulse-glow"></div>
+      <div className="absolute bottom-20 left-20 w-24 h-24 md:w-32 md:h-32 rounded-full bg-gradient-to-br from-ocean/20 to-mint/20 blur-xl"></div>
       
       <div className="max-w-3xl mx-auto px-6 md:px-10 lg:px-12 relative z-10">
         <div className="content-container">

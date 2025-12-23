@@ -19,8 +19,8 @@ export default function HowIThink() {
   return (
     <Section bgColor="white" className="py-20 md:py-28 lg:py-32 relative overflow-hidden">
       {/* Colorful accent shapes */}
-      <div className="absolute top-20 left-5 w-32 h-32 rounded-full bg-gradient-to-br from-lavender/20 to-rose/20 blur-2xl"></div>
-      <div className="absolute bottom-20 right-5 w-36 h-36 rounded-full bg-gradient-to-br from-coral/20 to-amber/20 blur-2xl"></div>
+      <div className="absolute top-20 left-5 w-24 h-24 md:w-32 md:h-32 rounded-full bg-gradient-to-br from-lavender/20 to-rose/20 blur-2xl"></div>
+      <div className="absolute bottom-20 right-5 w-28 h-28 md:w-36 md:h-36 rounded-full bg-gradient-to-br from-coral/20 to-amber/20 blur-2xl"></div>
       
       <div className="max-w-3xl mx-auto px-6 md:px-10 lg:px-12 relative z-10">
         <div className="content-container">
