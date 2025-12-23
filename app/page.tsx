@@ -12,10 +12,12 @@ import Background from "@/components/Background";
 import Closing from "@/components/Closing";
 import Footer from "@/components/Footer";
 import FloatingBlobs from "@/components/FloatingBlobs";
+import ScrollProgress from "@/components/ScrollProgress";
 
 export default function Home() {
   return (
     <main className="min-h-screen relative">
+      <ScrollProgress />
       <FloatingBlobs />
       <Hero />
       <Intro />

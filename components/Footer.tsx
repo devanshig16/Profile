@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 export default function Footer() {
   return (
     <motion.footer
-      className="py-16 md:py-20 border-t border-gray-200 w-full bg-white"
+      className="py-16 md:py-20 border-t border-gray-200 w-full bg-warm-cream relative"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
@@ -18,14 +18,13 @@ export default function Footer() {
     >
       <div className="max-w-3xl mx-auto px-6 md:px-10 lg:px-12">
         <nav aria-label="Contact and social links" className="flex justify-center">
-          <ul className="flex flex-wrap gap-6 text-base md:text-lg text-near-black leading-relaxed justify-center items-center">
+          <ul className="flex flex-wrap gap-6 text-base md:text-lg leading-relaxed justify-center items-center">
             <li>
               <a
                 href="https://github.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="link-interactive"
-                style={{ color: "#d4a574" }}
+                className="link-interactive text-near-black"
               >
                 GitHub
               </a>
@@ -38,8 +37,7 @@ export default function Footer() {
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="link-interactive"
-                style={{ color: "#a8b89a" }}
+                className="link-interactive text-near-black"
               >
                 LinkedIn
               </a>
@@ -50,8 +48,7 @@ export default function Footer() {
             <li>
               <a
                 href="mailto:devanshi.gpt16@gmail.com"
-                className="link-interactive"
-                style={{ color: "#d4a574" }}
+                className="link-interactive text-near-black"
               >
                 devanshi.gpt16@gmail.com
               </a>

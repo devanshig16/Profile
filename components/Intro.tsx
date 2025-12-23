@@ -10,8 +10,12 @@ import Section from "./Section";
  */
 export default function Intro() {
   return (
-    <Section bgColor="warm-cream" className="py-20 md:py-28 lg:py-32">
-      <div className="max-w-3xl mx-auto px-6 md:px-10 lg:px-12">
+    <Section bgColor="warm-cream" className="py-20 md:py-28 lg:py-32 relative overflow-hidden">
+      {/* Colorful accent shapes */}
+      <div className="absolute top-10 left-5 w-24 h-24 rounded-full bg-gradient-to-br from-amber/20 to-sunset/20 blur-xl"></div>
+      <div className="absolute bottom-10 right-5 w-32 h-32 rounded-full bg-gradient-to-br from-mint/20 to-ocean/20 blur-xl"></div>
+      
+      <div className="max-w-3xl mx-auto px-6 md:px-10 lg:px-12 relative z-10">
         <motion.div
           className="content-container"
           initial={{ opacity: 0, y: 20 }}
@@ -20,13 +24,15 @@ export default function Intro() {
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
           <motion.p
-            className="text-lg md:text-xl leading-[1.75] mb-6 text-near-black font-sans"
+            className="text-lg md:text-xl leading-[1.75] mb-6 font-sans"
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            Hi, I&apos;m Devanshi.
+            <span className="bg-gradient-to-r from-terracotta via-amber to-sunset bg-clip-text text-transparent font-semibold text-xl md:text-2xl">
+              Hi, I&apos;m Devanshi.
+            </span>
           </motion.p>
           <motion.p
             className="text-lg md:text-xl leading-[1.75] mb-6 text-near-black font-sans"

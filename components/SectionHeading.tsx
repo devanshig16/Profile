@@ -30,13 +30,21 @@ export default function SectionHeading({
       <h2 className="text-3xl md:text-4xl font-light text-near-black tracking-tight mb-4">
         {children}
       </h2>
-      {/* Decorative gradient accent line */}
-      <div 
-        className="h-px w-24 mt-6 mb-8"
-        style={{
-          background: "linear-gradient(to right, #d4a574, #a8b89a, transparent)",
-        }}
-      />
+      {/* Decorative gradient accent line with more vibrant colors */}
+      <div className="mt-6 mb-8 relative">
+        <div 
+          className="h-1 w-32 rounded-full"
+          style={{
+            background: "linear-gradient(to right, #d4a574, #ffb347, #a8b89a, #4ecdc4, transparent)",
+          }}
+        />
+        <div 
+          className="h-0.5 w-24 mt-1 rounded-full opacity-60"
+          style={{
+            background: "linear-gradient(to right, #b19cd9, #ff6b6b, transparent)",
+          }}
+        />
+      </div>
     </motion.div>
   );
 }

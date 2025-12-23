@@ -23,6 +23,15 @@ const config: Config = {
         "terracotta": "#d4a574",
         "sage": "#a8b89a",
         "peach": "#f4c2a1",
+        // Additional vibrant colors for creative design
+        "coral": "#ff6b6b",
+        "amber": "#ffb347",
+        "lavender": "#b19cd9",
+        "mint": "#98d8c8",
+        "sky": "#87ceeb",
+        "rose": "#ffb3ba",
+        "sunset": "#ff8c69",
+        "ocean": "#4ecdc4",
       },
       maxWidth: {
         "reading": "65ch", // Optimal reading width

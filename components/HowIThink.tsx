@@ -17,18 +17,24 @@ export default function HowIThink() {
   ];
 
   return (
-    <Section bgColor="white" className="py-20 md:py-28 lg:py-32">
-      <div className="max-w-3xl mx-auto px-6 md:px-10 lg:px-12">
+    <Section bgColor="white" className="py-20 md:py-28 lg:py-32 relative overflow-hidden">
+      {/* Colorful accent shapes */}
+      <div className="absolute top-20 left-5 w-32 h-32 rounded-full bg-gradient-to-br from-lavender/20 to-rose/20 blur-2xl"></div>
+      <div className="absolute bottom-20 right-5 w-36 h-36 rounded-full bg-gradient-to-br from-coral/20 to-amber/20 blur-2xl"></div>
+      
+      <div className="max-w-3xl mx-auto px-6 md:px-10 lg:px-12 relative z-10">
         <div className="content-container">
           <SectionHeading delay={0.1}>How I think</SectionHeading>
           <motion.p
-            className="text-lg md:text-xl leading-[1.75] mb-7 text-near-black font-sans"
+            className="text-lg md:text-xl leading-[1.75] mb-7 font-sans"
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            I don&apos;t think good software has to be loud.
+            <span className="text-near-black">I don&apos;t think good software has to be </span>
+            <span className="bg-gradient-to-r from-coral to-rose bg-clip-text text-transparent font-semibold">loud</span>
+            <span className="text-near-black">.</span>
           </motion.p>
           <motion.p
             className="text-lg md:text-xl leading-[1.75] mb-7 text-near-black font-sans"
@@ -39,18 +45,30 @@ export default function HowIThink() {
           >
             The best systems I&apos;ve worked on:
           </motion.p>
-          <ul className="space-y-5 text-lg md:text-xl leading-[1.75] mb-7 ml-6 text-near-black list-disc font-sans">
-            {listItems.map((item, index) => (
-              <motion.li
-                key={index}
-                initial={{ opacity: 0, y: 15 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}
-              >
-                {item}
-              </motion.li>
-            ))}
+          <ul className="space-y-5 text-lg md:text-xl leading-[1.75] mb-7 ml-6 text-near-black font-sans">
+            {listItems.map((item, index) => {
+              const colors = [
+                { marker: "bg-gradient-to-r from-terracotta to-amber", text: "from-amber to-sunset" },
+                { marker: "bg-gradient-to-r from-sage to-ocean", text: "from-ocean to-mint" },
+                { marker: "bg-gradient-to-r from-lavender to-rose", text: "from-rose to-coral" },
+              ];
+              const color = colors[index % 3];
+              return (
+                <motion.li
+                  key={index}
+                  initial={{ opacity: 0, y: 15 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}
+                  className="flex items-start gap-4 group"
+                >
+                  <div className={`w-2 h-2 rounded-full ${color.marker} mt-2.5 flex-shrink-0`}></div>
+                  <span className={`bg-gradient-to-r ${color.text} bg-clip-text text-transparent`}>
+                    {item}
+                  </span>
+                </motion.li>
+              );
+            })}
           </ul>
           <motion.p
             className="text-lg md:text-xl leading-[1.75] text-near-black font-sans"
