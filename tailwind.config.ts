@@ -6,6 +6,7 @@ const config: Config = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: "class",
   theme: {
     extend: {
       fontFamily: {
@@ -32,6 +33,13 @@ const config: Config = {
         "rose": "#ffb3ba",
         "sunset": "#ff8c69",
         "ocean": "#4ecdc4",
+        // Dark mode colors
+        "dark-bg": "#0a0a0a",
+        "dark-surface": "#141414",
+        "dark-surface-2": "#1a1a1a",
+        "dark-surface-3": "#202020",
+        "dark-text": "#e5e5e5",
+        "dark-text-muted": "#a3a3a3",
       },
       maxWidth: {
         "reading": "65ch", // Optimal reading width

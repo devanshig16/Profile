@@ -35,7 +35,7 @@ export default function Intro() {
             </span>
           </motion.p>
           <motion.p
-            className="text-lg md:text-xl leading-[1.75] mb-6 text-near-black font-sans"
+            className="text-lg md:text-xl leading-[1.75] mb-6 text-near-black dark:text-dark-text font-sans"
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -45,7 +45,7 @@ export default function Intro() {
             building software that makes complex systems easier to understand.
           </motion.p>
           <motion.p
-            className="text-lg md:text-xl leading-[1.75] text-near-black font-sans"
+            className="text-lg md:text-xl leading-[1.75] text-near-black dark:text-dark-text font-sans"
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}

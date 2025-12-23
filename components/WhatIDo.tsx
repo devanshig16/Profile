@@ -39,7 +39,7 @@ export default function WhatIDo() {
               Lately, that&apos;s meant:
             </span>
           </motion.p>
-          <ul className="space-y-7 text-lg md:text-xl leading-[1.75] text-near-black font-sans">
+          <ul className="space-y-7 text-lg md:text-xl leading-[1.75] text-near-black dark:text-dark-text font-sans">
             {items.map((item, index) => {
               const colors = [
                 { dot: "bg-terracotta", accent: "from-terracotta to-amber" },

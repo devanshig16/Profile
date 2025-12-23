@@ -13,10 +13,12 @@ import Closing from "@/components/Closing";
 import Footer from "@/components/Footer";
 import FloatingBlobs from "@/components/FloatingBlobs";
 import ScrollProgress from "@/components/ScrollProgress";
+import DarkModeToggle from "@/components/DarkModeToggle";
 
 export default function Home() {
   return (
     <main className="min-h-screen relative">
+      <DarkModeToggle />
       <ScrollProgress />
       <FloatingBlobs />
       <Hero />

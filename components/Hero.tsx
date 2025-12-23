@@ -23,11 +23,11 @@ export default function Hero() {
           viewport={{ once: true }}
           transition={{ duration: 0.7, ease: "easeOut" }}
         >
-          <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-serif font-normal leading-[1.1] mb-8 tracking-tight">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-serif font-normal leading-[1.1] mb-8 tracking-tight text-near-black dark:text-dark-text">
             I like <span className="bg-gradient-to-r from-lavender via-rose to-coral bg-clip-text text-transparent">boring problems</span>.
           </h1>
           <motion.p
-            className="text-xl md:text-2xl font-sans font-normal leading-[1.7] text-gray-700 max-w-reading"
+            className="text-xl md:text-2xl font-sans font-normal leading-[1.7] text-gray-700 dark:text-dark-text-muted max-w-reading"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}

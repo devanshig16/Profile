@@ -16,9 +16,9 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ title, description, index = 0 }: ProjectCardProps) {
   const gradientColors = [
-    "from-terracotta/20 via-peach/20 to-amber/20",
-    "from-sage/20 via-mint/20 to-ocean/20",
-    "from-lavender/20 via-rose/20 to-coral/20",
+    "from-terracotta/20 via-peach/20 to-amber/20 dark:from-terracotta/10 dark:via-peach/10 dark:to-amber/10",
+    "from-sage/20 via-mint/20 to-ocean/20 dark:from-sage/10 dark:via-mint/10 dark:to-ocean/10",
+    "from-lavender/20 via-rose/20 to-coral/20 dark:from-lavender/10 dark:via-rose/10 dark:to-coral/10",
   ];
   const borderColors = [
     "border-l-terracotta",
@@ -37,12 +37,12 @@ export default function ProjectCard({ title, description, index = 0 }: ProjectCa
       {/* Decorative corner accent */}
       <div className={`absolute top-0 right-0 w-24 h-24 bg-gradient-to-br ${gradientColors[index % 3]} opacity-30 rounded-bl-full`}></div>
       
-      <h3 className="text-2xl md:text-3xl font-light mb-5 text-near-black tracking-tight relative z-10">
+      <h3 className="text-2xl md:text-3xl font-light mb-5 text-near-black dark:text-dark-text tracking-tight relative z-10">
         <span className={`bg-gradient-to-r ${index % 3 === 0 ? 'from-terracotta to-amber' : index % 3 === 1 ? 'from-sage to-ocean' : 'from-lavender to-rose'} bg-clip-text text-transparent`}>
           {title}
         </span>
       </h3>
-      <p className="text-lg md:text-xl leading-[1.75] text-near-black max-w-reading relative z-10">{description}</p>
+      <p className="text-lg md:text-xl leading-[1.75] text-near-black dark:text-dark-text max-w-reading relative z-10">{description}</p>
     </motion.article>
   );
 }

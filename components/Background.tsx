@@ -26,13 +26,13 @@ export default function Background() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <span className="text-near-black">I&apos;ve worked across </span>
+            <span className="text-near-black dark:text-dark-text">I&apos;ve worked across </span>
             <span className="bg-gradient-to-r from-terracotta to-amber bg-clip-text text-transparent font-semibold">research</span>
-            <span className="text-near-black">, </span>
+            <span className="text-near-black dark:text-dark-text">, </span>
             <span className="bg-gradient-to-r from-sage to-ocean bg-clip-text text-transparent font-semibold">nonprofits</span>
-            <span className="text-near-black">, and </span>
+            <span className="text-near-black dark:text-dark-text">, and </span>
             <span className="bg-gradient-to-r from-lavender to-rose bg-clip-text text-transparent font-semibold">industry</span>
-            <span className="text-near-black"> — from AI consulting at Bata to analytics systems in a newsroom.</span>
+            <span className="text-near-black dark:text-dark-text"> — from AI consulting at Bata to analytics systems in a newsroom.</span>
           </motion.p>
           <motion.p
             className="text-lg md:text-xl leading-[1.75] mt-7 font-sans"
@@ -41,9 +41,9 @@ export default function Background() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.3 }}
           >
-            <span className="text-near-black">I&apos;m currently finishing my </span>
+            <span className="text-near-black dark:text-dark-text">I&apos;m currently finishing my </span>
             <span className="bg-gradient-to-r from-amber to-sunset bg-clip-text text-transparent font-semibold">B.S. in Computer Science</span>
-            <span className="text-near-black"> at Penn State.</span>
+            <span className="text-near-black dark:text-dark-text"> at Penn State.</span>
           </motion.p>
         </div>
       </div>

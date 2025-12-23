@@ -16,10 +16,10 @@ interface SectionProps {
 }
 
 const bgColorClasses = {
-  white: "bg-white",
-  "warm-cream": "bg-warm-cream",
-  "soft-sage": "bg-soft-sage",
-  "light-terracotta": "bg-light-terracotta",
+  white: "bg-white dark:bg-dark-surface",
+  "warm-cream": "bg-warm-cream dark:bg-dark-surface-2",
+  "soft-sage": "bg-soft-sage dark:bg-dark-surface-3",
+  "light-terracotta": "bg-light-terracotta dark:bg-dark-surface-2",
 };
 
 export default function Section({ children, bgColor, className = "" }: SectionProps) {

@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 export default function Footer() {
   return (
     <motion.footer
-      className="py-16 md:py-20 border-t border-gray-200 w-full bg-warm-cream relative"
+      className="py-16 md:py-20 border-t border-gray-200 dark:border-gray-800 w-full bg-warm-cream dark:bg-dark-surface-2 relative"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
@@ -24,31 +24,31 @@ export default function Footer() {
                 href="https://github.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="link-interactive text-near-black"
+                className="link-interactive text-near-black dark:text-dark-text"
               >
                 GitHub
               </a>
             </li>
             <li>
-              <span aria-hidden="true" className="text-gray-400">·</span>
+              <span aria-hidden="true" className="text-gray-400 dark:text-gray-600">·</span>
             </li>
             <li>
               <a
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="link-interactive text-near-black"
+                className="link-interactive text-near-black dark:text-dark-text"
               >
                 LinkedIn
               </a>
             </li>
             <li>
-              <span aria-hidden="true" className="text-gray-400">·</span>
+              <span aria-hidden="true" className="text-gray-400 dark:text-gray-600">·</span>
             </li>
             <li>
               <a
                 href="mailto:devanshi.gpt16@gmail.com"
-                className="link-interactive text-near-black"
+                className="link-interactive text-near-black dark:text-dark-text"
               >
                 devanshi.gpt16@gmail.com
               </a>

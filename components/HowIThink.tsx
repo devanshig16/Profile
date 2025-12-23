@@ -32,12 +32,12 @@ export default function HowIThink() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <span className="text-near-black">I don&apos;t think good software has to be </span>
+            <span className="text-near-black dark:text-dark-text">I don&apos;t think good software has to be </span>
             <span className="bg-gradient-to-r from-coral to-rose bg-clip-text text-transparent font-semibold">loud</span>
-            <span className="text-near-black">.</span>
+            <span className="text-near-black dark:text-dark-text">.</span>
           </motion.p>
           <motion.p
-            className="text-lg md:text-xl leading-[1.75] mb-7 text-near-black font-sans"
+            className="text-lg md:text-xl leading-[1.75] mb-7 text-near-black dark:text-dark-text font-sans"
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -45,7 +45,7 @@ export default function HowIThink() {
           >
             The best systems I&apos;ve worked on:
           </motion.p>
-          <ul className="space-y-5 text-lg md:text-xl leading-[1.75] mb-7 ml-6 text-near-black font-sans">
+          <ul className="space-y-5 text-lg md:text-xl leading-[1.75] mb-7 ml-6 text-near-black dark:text-dark-text font-sans">
             {listItems.map((item, index) => {
               const colors = [
                 { marker: "bg-gradient-to-r from-terracotta to-amber", text: "from-amber to-sunset" },
@@ -71,7 +71,7 @@ export default function HowIThink() {
             })}
           </ul>
           <motion.p
-            className="text-lg md:text-xl leading-[1.75] text-near-black font-sans"
+            className="text-lg md:text-xl leading-[1.75] text-near-black dark:text-dark-text font-sans"
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}

@@ -24,13 +24,13 @@ export default function Closing() {
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
           <p className="text-lg md:text-xl leading-[1.75] font-sans">
-            <span className="text-near-black">If you&apos;re building something </span>
+            <span className="text-near-black dark:text-dark-text">If you&apos;re building something </span>
             <span className="bg-gradient-to-r from-coral to-rose bg-clip-text text-transparent font-semibold">messy</span>
-            <span className="text-near-black">, </span>
+            <span className="text-near-black dark:text-dark-text">, </span>
             <span className="bg-gradient-to-r from-lavender to-sage bg-clip-text text-transparent font-semibold">under-documented</span>
-            <span className="text-near-black">, or slightly </span>
+            <span className="text-near-black dark:text-dark-text">, or slightly </span>
             <span className="bg-gradient-to-r from-amber to-sunset bg-clip-text text-transparent font-semibold">boring</span>
-            <span className="text-near-black"> — I&apos;d probably enjoy working on it.</span>
+            <span className="text-near-black dark:text-dark-text"> — I&apos;d probably enjoy working on it.</span>
           </p>
         </motion.div>
       </div>
