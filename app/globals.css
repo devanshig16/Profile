@@ -199,6 +199,23 @@
       scroll-behavior: smooth;
       -webkit-overflow-scrolling: touch;
     }
+    
+    /* Better text rendering on mobile */
+    body {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    
+    /* Prevent horizontal scroll */
+    body {
+      overflow-x: hidden;
+    }
+  }
+  
+  /* Ensure images and media are responsive */
+  img, video {
+    max-width: 100%;
+    height: auto;
   }
 }
 

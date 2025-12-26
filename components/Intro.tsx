@@ -16,7 +16,7 @@ export default function Intro() {
       <div className="absolute top-10 left-5 w-20 h-20 md:w-24 md:h-24 rounded-full bg-gradient-to-br from-amber/20 to-sunset/20 blur-xl"></div>
       <div className="absolute bottom-10 right-5 w-24 h-24 md:w-32 md:h-32 rounded-full bg-gradient-to-br from-mint/20 to-ocean/20 blur-xl"></div>
       
-      <div className="max-w-7xl mx-auto px-8 md:px-12 lg:px-16 xl:px-20 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20 relative z-10">
         <motion.div
           className="flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-12"
           initial={{ opacity: 0, y: 20 }}
@@ -27,7 +27,7 @@ export default function Intro() {
           {/* Text Content */}
           <div className="flex-1 order-2 md:order-1">
             <motion.p
-              className="text-lg md:text-xl leading-[1.75] mb-6 text-near-black dark:text-dark-text font-sans"
+              className="text-base sm:text-lg md:text-xl leading-[1.75] mb-4 sm:mb-6 text-near-black dark:text-dark-text font-sans"
               initial={{ opacity: 0, y: 15 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -36,7 +36,7 @@ export default function Intro() {
               i&apos;m a third year penn state cs major interested in ai strategy, responsible machine learning, and building data systems that make complex information accessible. i&apos;m currently president of HackPSU, penn state&apos;s largest student-run hackathon, and i work on ai consulting, research, and web development projects.
             </motion.p>
             <motion.p
-              className="text-lg md:text-xl leading-[1.75] text-near-black dark:text-dark-text font-sans"
+              className="text-base sm:text-lg md:text-xl leading-[1.75] text-near-black dark:text-dark-text font-sans"
               initial={{ opacity: 0, y: 15 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -54,14 +54,14 @@ export default function Intro() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.05 }}
           >
-            <div className="relative w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden ring-4 ring-terracotta/20 dark:ring-lavender/20 shadow-lg bg-gradient-to-br from-terracotta/20 to-peach/20 dark:from-lavender/20 dark:to-rose/20">
+            <div className="relative w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 rounded-full overflow-hidden ring-4 ring-terracotta/20 dark:ring-lavender/20 shadow-lg bg-gradient-to-br from-terracotta/20 to-peach/20 dark:from-lavender/20 dark:to-rose/20">
               <Image
                 src="/profile.png"
                 alt="Devanshi Gupta"
                 fill
                 className="object-cover"
                 priority
-                sizes="(max-width: 768px) 192px, 224px"
+                sizes="(max-width: 640px) 160px, (max-width: 768px) 192px, 224px"
               />
             </div>
           </motion.div>

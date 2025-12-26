@@ -28,7 +28,7 @@ export default function ProjectCard({ title, description, index = 0 }: ProjectCa
   
   return (
     <motion.article
-      className={`mb-8 md:mb-10 p-6 md:p-8 rounded-xl transition-all duration-300 hover:shadow-xl hover:-translate-y-2 cursor-default bg-gradient-to-br ${gradientColors[index % 3]} border-l-4 ${borderColors[index % 3]} backdrop-blur-sm relative overflow-hidden`}
+      className={`mb-6 sm:mb-8 md:mb-10 p-4 sm:p-6 md:p-8 rounded-xl transition-all duration-300 hover:shadow-xl hover:-translate-y-2 active:scale-[0.98] cursor-default bg-gradient-to-br ${gradientColors[index % 3]} border-l-4 ${borderColors[index % 3]} backdrop-blur-sm relative overflow-hidden`}
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
@@ -37,12 +37,12 @@ export default function ProjectCard({ title, description, index = 0 }: ProjectCa
       {/* Decorative corner accent */}
       <div className={`absolute top-0 right-0 w-24 h-24 bg-gradient-to-br ${gradientColors[index % 3]} opacity-30 rounded-bl-full`}></div>
       
-      <h3 className="text-xl sm:text-2xl md:text-3xl font-light mb-4 md:mb-5 text-near-black dark:text-dark-text tracking-tight relative z-10">
+      <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-light mb-3 sm:mb-4 md:mb-5 text-near-black dark:text-dark-text tracking-tight relative z-10">
         <span className={`bg-gradient-to-r ${index % 3 === 0 ? 'from-terracotta to-amber' : index % 3 === 1 ? 'from-sage to-ocean' : 'from-lavender to-rose'} bg-clip-text text-transparent`}>
           {title}
         </span>
       </h3>
-      <p className="text-base sm:text-lg md:text-xl leading-[1.75] text-near-black dark:text-dark-text max-w-reading relative z-10">{description}</p>
+      <p className="text-sm sm:text-base md:text-lg lg:text-xl leading-[1.75] text-near-black dark:text-dark-text max-w-reading relative z-10">{description}</p>
     </motion.article>
   );
 }

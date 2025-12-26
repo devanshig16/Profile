@@ -15,7 +15,7 @@ export default function Closing() {
       <div className="absolute top-1/2 left-10 w-32 h-32 md:w-40 md:h-40 rounded-full bg-gradient-to-br from-lavender/25 to-rose/25 blur-2xl"></div>
       <div className="absolute bottom-10 right-10 w-28 h-28 md:w-36 md:h-36 rounded-full bg-gradient-to-br from-ocean/25 to-mint/25 blur-2xl"></div>
       
-      <div className="max-w-7xl mx-auto px-8 md:px-12 lg:px-16 xl:px-20 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

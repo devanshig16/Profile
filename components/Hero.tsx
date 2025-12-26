@@ -15,7 +15,7 @@ export default function Hero() {
       <div className="absolute top-20 right-10 w-24 h-24 md:w-32 md:h-32 rounded-full bg-gradient-to-br from-terracotta/30 to-peach/30 blur-2xl -z-0"></div>
       <div className="absolute bottom-20 left-10 w-32 h-32 md:w-40 md:h-40 rounded-full bg-gradient-to-br from-sage/25 to-mint/25 blur-2xl -z-0"></div>
       
-      <div className="max-w-7xl mx-auto px-8 md:px-12 lg:px-16 xl:px-20 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}

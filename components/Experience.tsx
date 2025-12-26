@@ -73,35 +73,35 @@ export default function Experience() {
       <div className="absolute top-20 right-20 w-20 h-20 md:w-28 md:h-28 rounded-full bg-gradient-to-br from-lavender/20 to-rose/20 blur-xl animate-pulse-glow"></div>
       <div className="absolute bottom-20 left-20 w-24 h-24 md:w-32 md:h-32 rounded-full bg-gradient-to-br from-ocean/20 to-mint/20 blur-xl"></div>
       
-      <div className="max-w-7xl mx-auto px-8 md:px-12 lg:px-16 xl:px-20 relative z-10">
-        <div className="mb-12 md:mb-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20 relative z-10">
+        <div className="mb-8 sm:mb-12 md:mb-16">
           <SectionHeading delay={0.1}>Experience</SectionHeading>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-10 lg:gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-12">
           {experiences.map((exp, index) => (
             <motion.article
               key={index}
-              className="border-l-4 border-l-sage pl-6 md:pl-8 bg-white/50 dark:bg-dark-surface/50 rounded-r-lg p-6 md:p-8 hover:shadow-lg transition-shadow duration-300"
+              className="border-l-4 border-l-sage pl-4 sm:pl-6 md:pl-8 bg-white/50 dark:bg-dark-surface/50 rounded-r-lg p-4 sm:p-6 md:p-8 hover:shadow-lg transition-shadow duration-300"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.05 }}
             >
-              <div className="mb-4">
-                <h3 className="text-xl md:text-2xl font-semibold mb-1 text-near-black dark:text-dark-text">
+              <div className="mb-3 sm:mb-4">
+                <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-1 text-near-black dark:text-dark-text">
                   {exp.title}
                 </h3>
-                <p className="text-lg md:text-xl font-medium text-gray-800 dark:text-gray-300 mb-1">
+                <p className="text-base sm:text-lg md:text-xl font-medium text-gray-800 dark:text-gray-300 mb-1">
                   {exp.company}
                 </p>
-                <p className="text-base md:text-lg text-gray-600 dark:text-gray-500 mb-2">
+                <p className="text-sm sm:text-base md:text-lg text-gray-600 dark:text-gray-500 mb-2">
                   {exp.location}
                 </p>
-                <p className="text-sm md:text-base text-gray-500 dark:text-gray-400 italic">
+                <p className="text-xs sm:text-sm md:text-base text-gray-500 dark:text-gray-400 italic">
                   {exp.period}
                 </p>
               </div>
-              <p className="text-base md:text-lg leading-[1.7] text-near-black dark:text-dark-text">
+              <p className="text-sm sm:text-base md:text-lg leading-[1.7] text-near-black dark:text-dark-text">
                 {exp.description}
               </p>
             </motion.article>
