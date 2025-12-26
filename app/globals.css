@@ -155,29 +155,29 @@
     transform: scale(0.98);
   }
 
-  /* Content area - constrained width with generous padding, centered */
+  /* Content area - wider width with generous padding, centered */
   .content-container {
-    max-width: 65ch; /* Optimal reading width */
-    padding: 2rem 1rem;
+    max-width: 90ch; /* Wider reading width */
+    padding: 1.5rem 2rem;
     margin-left: auto;
     margin-right: auto;
   }
 
   @media (min-width: 640px) {
     .content-container {
-      padding: 3rem 1.5rem;
+      padding: 2rem 3rem;
     }
   }
 
   @media (min-width: 768px) {
     .content-container {
-      padding: 4rem 2.5rem;
+      padding: 2.5rem 4rem;
     }
   }
 
   @media (min-width: 1024px) {
     .content-container {
-      padding: 5rem 3rem;
+      padding: 3rem 5rem;
     }
   }
 

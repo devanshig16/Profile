@@ -15,7 +15,7 @@ export default function DarkModeToggle() {
   return (
     <button
       onClick={toggleTheme}
-      className="fixed top-4 right-4 md:top-6 md:right-6 z-50 p-3 md:p-3 rounded-full bg-white dark:bg-dark-surface-2 border border-gray-200 dark:border-gray-800 shadow-lg hover:shadow-xl active:scale-95 transition-all duration-300 group touch-manipulation"
+      className="fixed bottom-4 right-4 md:bottom-6 md:right-6 z-50 p-3 md:p-3 rounded-full bg-white dark:bg-dark-surface-2 border border-gray-200 dark:border-gray-800 shadow-lg hover:shadow-xl active:scale-95 transition-all duration-300 group touch-manipulation"
       aria-label="Toggle dark mode"
       style={{ WebkitTapHighlightColor: 'transparent' }}
     >

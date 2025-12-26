@@ -17,7 +17,7 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: "Devanshi Gupta",
-  description: "Personal portfolio",
+  description: "Third year Computer Science student at Penn State. Building AI solutions and data systems. President of HackPSU.",
 };
 
 export const viewport: Viewport = {

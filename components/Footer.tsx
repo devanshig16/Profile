@@ -16,12 +16,12 @@ export default function Footer() {
       viewport={{ once: true }}
       transition={{ duration: 0.6, ease: "easeOut" }}
     >
-      <div className="max-w-3xl mx-auto px-6 md:px-10 lg:px-12">
+      <div className="max-w-7xl mx-auto px-8 md:px-12 lg:px-16 xl:px-20">
         <nav aria-label="Contact and social links" className="flex justify-center">
           <ul className="flex flex-wrap gap-4 md:gap-6 text-sm sm:text-base md:text-lg leading-relaxed justify-center items-center">
             <li>
               <a
-                href="https://github.com"
+                href="https://github.com/devanshig16"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="link-interactive text-near-black dark:text-dark-text"
@@ -34,7 +34,7 @@ export default function Footer() {
             </li>
             <li>
               <a
-                href="https://linkedin.com"
+                href="https://linkedin.com/in/devanshigupta99"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="link-interactive text-near-black dark:text-dark-text"

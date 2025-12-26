@@ -28,7 +28,7 @@ export default function ProjectCard({ title, description, index = 0 }: ProjectCa
   
   return (
     <motion.article
-      className={`mb-12 md:mb-16 lg:mb-20 p-6 md:p-8 rounded-xl transition-all duration-300 hover:shadow-xl hover:-translate-y-2 cursor-default bg-gradient-to-br ${gradientColors[index % 3]} border-l-4 ${borderColors[index % 3]} backdrop-blur-sm relative overflow-hidden`}
+      className={`mb-8 md:mb-10 p-6 md:p-8 rounded-xl transition-all duration-300 hover:shadow-xl hover:-translate-y-2 cursor-default bg-gradient-to-br ${gradientColors[index % 3]} border-l-4 ${borderColors[index % 3]} backdrop-blur-sm relative overflow-hidden`}
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}

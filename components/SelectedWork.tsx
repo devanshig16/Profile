@@ -12,37 +12,42 @@ import ProjectCard from "./ProjectCard";
 export default function SelectedWork() {
   const projects = [
     {
-      title: "Newsroom Analytics — The Daily Collegian",
+      title: "PSU Marketplace Website",
       description:
-        "Newsrooms produce years of content, but very little feedback about how it all fits together. I built a system that surfaces patterns in publishing behavior — structure, cadence, and coverage — so editors can make decisions with data instead of guesswork.",
+        "Built a full-stack campus marketplace using React.js, Node.js, Firebase, and Stripe for secure payments. Designed relational schemas to support listings, users, and transactions. Stress-tested the platform with 10,000+ simulated transactions to validate scalability and reliability.",
     },
     {
-      title: "Responsible Machine Learning",
+      title: "Audit Dashboard — The Daily Collegian",
       description:
-        "At a socially responsible AI research lab, I worked on fairness and bias-mitigation pipelines for machine learning models. The goal wasn't just better metrics, but models people could understand and trust.",
+        "Developed a centralized dashboard to analyze article structure, publishing frequency, and coverage trends. Automated reporting workflows, reducing manual analysis effort for editorial staff. Surfaced data-driven insights into newsroom production bottlenecks and content strategy.",
     },
     {
-      title: "AI in Business",
+      title: "Responsible Machine Learning Research",
       description:
-        "As an AI consultant, I evaluated and tested generative AI tools for internal workflows — balancing capability, cost, and whether people would actually use them. One of those pilots ended up securing funding for real deployment.",
+        "Built a Python-based fairness evaluation pipeline integrating bias detection and mitigation techniques for responsible ML deployment. Optimized interpretable classifiers, improving fairness and recall by 18% while maintaining model transparency. Integrated explainability modules and automated error analysis to support data-driven model refinement.",
+    },
+    {
+      title: "Bureaucracy Buddy",
+      description:
+        "Designed an AI-powered assistant to simplify complex paperwork and form completion through guided, conversational workflows. Translated bureaucratic processes into clear, step-by-step user experiences to reduce confusion and user friction. Focused on accessibility, usability, and human-centered design to make administrative tasks more approachable.",
     },
   ];
 
   return (
-    <Section bgColor="light-terracotta" className="py-20 md:py-28 lg:py-32">
-      <div className="max-w-3xl mx-auto px-6 md:px-10 lg:px-12">
-        <div className="content-container">
+    <Section bgColor="light-terracotta" nextBgColor="warm-cream" className="py-16 md:py-20 lg:py-24">
+      <div className="max-w-7xl mx-auto px-8 md:px-12 lg:px-16 xl:px-20">
+        <div className="mb-12 md:mb-16">
           <SectionHeading delay={0.1}>Selected work</SectionHeading>
-          <div>
-            {projects.map((project, index) => (
-              <ProjectCard
-                key={index}
-                title={project.title}
-                description={project.description}
-                index={index}
-              />
-            ))}
-          </div>
+        </div>
+        <div>
+          {projects.map((project, index) => (
+            <ProjectCard
+              key={index}
+              title={project.title}
+              description={project.description}
+              index={index}
+            />
+          ))}
         </div>
       </div>
     </Section>

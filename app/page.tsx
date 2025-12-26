@@ -5,9 +5,9 @@
  */
 import Hero from "@/components/Hero";
 import Intro from "@/components/Intro";
-import WhatIDo from "@/components/WhatIDo";
+import Publications from "@/components/Publications";
+import Experience from "@/components/Experience";
 import SelectedWork from "@/components/SelectedWork";
-import HowIThink from "@/components/HowIThink";
 import Background from "@/components/Background";
 import Closing from "@/components/Closing";
 import Footer from "@/components/Footer";
@@ -23,9 +23,9 @@ export default function Home() {
       <FloatingBlobs />
       <Hero />
       <Intro />
-      <WhatIDo />
+      <Publications />
+      <Experience />
       <SelectedWork />
-      <HowIThink />
       <Background />
       <Closing />
       <Footer />
