@@ -10,7 +10,7 @@ import SectionHeading from "./SectionHeading";
  */
 export default function Publications() {
   return (
-    <Section bgColor="white" nextBgColor="warm-cream" className="py-16 md:py-20 lg:py-24 relative overflow-hidden">
+    <Section bgColor="white" nextBgColor="warm-cream" className="py-10 md:py-14 lg:py-16 relative overflow-hidden">
       <div className="absolute top-20 left-5 w-24 h-24 md:w-32 md:h-32 rounded-full bg-gradient-to-br from-lavender/20 to-rose/20 blur-2xl"></div>
       <div className="absolute bottom-20 right-5 w-28 h-28 md:w-36 md:h-36 rounded-full bg-gradient-to-br from-coral/20 to-amber/20 blur-2xl"></div>
       

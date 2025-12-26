@@ -11,7 +11,7 @@ import Section from "./Section";
  */
 export default function Intro() {
   return (
-    <Section bgColor="warm-cream" nextBgColor="white" className="py-16 md:py-20 lg:py-24 relative overflow-hidden">
+    <Section bgColor="warm-cream" nextBgColor="white" className="py-10 md:py-14 lg:py-16 relative overflow-hidden">
       {/* Colorful accent shapes */}
       <div className="absolute top-10 left-5 w-20 h-20 md:w-24 md:h-24 rounded-full bg-gradient-to-br from-amber/20 to-sunset/20 blur-xl"></div>
       <div className="absolute bottom-10 right-5 w-24 h-24 md:w-32 md:h-32 rounded-full bg-gradient-to-br from-mint/20 to-ocean/20 blur-xl"></div>

@@ -10,7 +10,7 @@ import Section from "./Section";
  */
 export default function Closing() {
   return (
-    <Section bgColor="soft-sage" className="py-16 md:py-20 lg:py-24 relative overflow-hidden">
+    <Section bgColor="soft-sage" className="py-10 md:py-14 lg:py-16 relative overflow-hidden">
       {/* Colorful accent shapes */}
       <div className="absolute top-1/2 left-10 w-32 h-32 md:w-40 md:h-40 rounded-full bg-gradient-to-br from-lavender/25 to-rose/25 blur-2xl"></div>
       <div className="absolute bottom-10 right-10 w-28 h-28 md:w-36 md:h-36 rounded-full bg-gradient-to-br from-ocean/25 to-mint/25 blur-2xl"></div>

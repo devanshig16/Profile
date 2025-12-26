@@ -1,7 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
-
 /**
  * Footer component - Contact links
  * Simple, accessible navigation to external profiles
@@ -9,12 +7,8 @@ import { motion } from "framer-motion";
  */
 export default function Footer() {
   return (
-    <motion.footer
-      className="py-16 md:py-20 border-t border-gray-200 dark:border-gray-800 w-full bg-warm-cream dark:bg-dark-surface-2 relative"
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.6, ease: "easeOut" }}
+    <footer
+      className="py-10 md:py-14 border-t border-gray-200 dark:border-gray-800 w-full bg-white dark:bg-dark-surface relative"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20">
         <nav aria-label="Contact and social links" className="flex justify-center">
@@ -56,7 +50,7 @@ export default function Footer() {
           </ul>
         </nav>
       </div>
-    </motion.footer>
+    </footer>
   );
 }
 

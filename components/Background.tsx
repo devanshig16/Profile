@@ -11,7 +11,7 @@ import SectionHeading from "./SectionHeading";
  */
 export default function Background() {
   return (
-    <Section bgColor="warm-cream" nextBgColor="soft-sage" className="py-16 md:py-20 lg:py-24 relative overflow-hidden">
+    <Section bgColor="warm-cream" nextBgColor="soft-sage" className="py-10 md:py-14 lg:py-16 relative overflow-hidden">
       {/* Colorful accent shapes */}
       <div className="absolute top-20 right-20 w-20 h-20 md:w-28 md:h-28 rounded-full bg-gradient-to-br from-lavender/20 to-rose/20 blur-xl animate-pulse-glow"></div>
       <div className="absolute bottom-20 left-20 w-24 h-24 md:w-32 md:h-32 rounded-full bg-gradient-to-br from-ocean/20 to-mint/20 blur-xl"></div>

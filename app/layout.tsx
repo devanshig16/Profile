@@ -34,7 +34,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable}`} suppressHydrationWarning>
-      <body className="font-sans text-near-black dark:text-dark-text bg-[#fefbf8] dark:bg-dark-bg antialiased transition-colors duration-300">
+      <body className="font-sans text-near-black dark:text-dark-text bg-white dark:bg-dark-surface antialiased transition-colors duration-300">
         <script
           dangerouslySetInnerHTML={{
             __html: `

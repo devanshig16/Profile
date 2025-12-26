@@ -34,7 +34,7 @@ export default function SelectedWork() {
   ];
 
   return (
-    <Section bgColor="light-terracotta" nextBgColor="warm-cream" className="py-16 md:py-20 lg:py-24">
+    <Section bgColor="light-terracotta" nextBgColor="warm-cream" className="py-10 md:py-14 lg:py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20">
         <div className="mb-8 sm:mb-12 md:mb-16">
           <SectionHeading delay={0.1}>Selected work</SectionHeading>
