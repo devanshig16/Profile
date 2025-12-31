@@ -9,6 +9,7 @@ import Publications from "@/components/Publications";
 import Experience from "@/components/Experience";
 import SelectedWork from "@/components/SelectedWork";
 import Background from "@/components/Background";
+import ReadersFuel from "@/components/ReadersFuel";
 import Closing from "@/components/Closing";
 import Footer from "@/components/Footer";
 import FloatingBlobs from "@/components/FloatingBlobs";
@@ -27,6 +28,7 @@ export default function Home() {
       <Experience />
       <SelectedWork />
       <Background />
+      <ReadersFuel />
       <Closing />
       <Footer />
     </main>

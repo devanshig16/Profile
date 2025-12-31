@@ -12,9 +12,10 @@ interface ProjectCardProps {
   title: string;
   description: string;
   index?: number;
+  link?: string;
 }
 
-export default function ProjectCard({ title, description, index = 0 }: ProjectCardProps) {
+export default function ProjectCard({ title, description, index = 0, link }: ProjectCardProps) {
   const gradientColors = [
     "from-terracotta/20 via-peach/20 to-amber/20 dark:from-terracotta/10 dark:via-peach/10 dark:to-amber/10",
     "from-sage/20 via-mint/20 to-ocean/20 dark:from-sage/10 dark:via-mint/10 dark:to-ocean/10",
@@ -28,7 +29,7 @@ export default function ProjectCard({ title, description, index = 0 }: ProjectCa
   
   return (
     <motion.article
-      className={`mb-6 sm:mb-8 md:mb-10 p-4 sm:p-6 md:p-8 rounded-xl transition-all duration-300 hover:shadow-xl hover:-translate-y-2 active:scale-[0.98] cursor-default bg-gradient-to-br ${gradientColors[index % 3]} border-l-4 ${borderColors[index % 3]} backdrop-blur-sm relative overflow-hidden`}
+      className={`mb-6 sm:mb-8 md:mb-10 p-4 sm:p-6 md:p-8 rounded-xl transition-all duration-300 hover:shadow-xl hover:-translate-y-2 active:scale-[0.98] ${link ? 'cursor-pointer' : 'cursor-default'} bg-gradient-to-br ${gradientColors[index % 3]} border-l-4 ${borderColors[index % 3]} backdrop-blur-sm relative overflow-hidden`}
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
@@ -38,9 +39,21 @@ export default function ProjectCard({ title, description, index = 0 }: ProjectCa
       <div className={`absolute top-0 right-0 w-24 h-24 bg-gradient-to-br ${gradientColors[index % 3]} opacity-30 rounded-bl-full`}></div>
       
       <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-light mb-3 sm:mb-4 md:mb-5 text-near-black dark:text-dark-text tracking-tight relative z-10">
-        <span className={`bg-gradient-to-r ${index % 3 === 0 ? 'from-terracotta to-amber' : index % 3 === 1 ? 'from-sage to-ocean' : 'from-lavender to-rose'} bg-clip-text text-transparent`}>
-          {title}
-        </span>
+        {link ? (
+          <a
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`bg-gradient-to-r ${index % 3 === 0 ? 'from-terracotta to-amber' : index % 3 === 1 ? 'from-sage to-ocean' : 'from-lavender to-rose'} bg-clip-text text-transparent hover:opacity-80 transition-opacity inline-flex items-center gap-1`}
+          >
+            {title}
+            <span className="text-xs">↗</span>
+          </a>
+        ) : (
+          <span className={`bg-gradient-to-r ${index % 3 === 0 ? 'from-terracotta to-amber' : index % 3 === 1 ? 'from-sage to-ocean' : 'from-lavender to-rose'} bg-clip-text text-transparent`}>
+            {title}
+          </span>
+        )}
       </h3>
       <p className="text-sm sm:text-base md:text-lg lg:text-xl leading-[1.75] text-near-black dark:text-dark-text max-w-reading relative z-10">{description}</p>
     </motion.article>

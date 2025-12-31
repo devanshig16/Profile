@@ -40,12 +40,9 @@ export default function Footer() {
               <span aria-hidden="true" className="text-gray-400 dark:text-gray-600">·</span>
             </li>
             <li>
-              <a
-                href="mailto:devanshi.gpt16@gmail.com"
-                className="link-interactive text-near-black dark:text-dark-text break-all sm:break-normal"
-              >
+              <span className="text-near-black dark:text-dark-text break-all sm:break-normal">
                 devanshi.gpt16@gmail.com
-              </a>
+              </span>
             </li>
           </ul>
         </nav>

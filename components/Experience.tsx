@@ -13,6 +13,7 @@ export default function Experience() {
     {
       title: "President",
       company: "HackPSU",
+      companyLink: "https://hackpsu.org/",
       location: "University Park, PA",
       period: "May 2025 – Present",
       description: "Lead Penn State's largest student-run hackathon, setting strategic direction and overseeing end-to-end operations for 800+ participants per semester. Manage and mentor a 10+ person executive board across education, sponsorship, logistics, and outreach teams. Drive partnerships with campus organizations and industry sponsors to expand technical access, programming quality, and event scale.",
@@ -20,6 +21,7 @@ export default function Experience() {
     {
       title: "Business Insights Staff",
       company: "The Daily Collegian",
+      companyLink: "https://www.psucollegian.com/",
       location: "University Park, PA",
       period: "August 2025 – Present",
       description: "Develop a full-stack analytics dashboard to track and visualize social media performance across multiple platforms. Build machine learning pipelines using named entity recognition, clustering, and contextual analysis to extract trends from long-term newsroom data. Collaborate with editorial and business teams to translate insights into data-informed audience and growth strategies.",
@@ -27,6 +29,7 @@ export default function Experience() {
     {
       title: "Lead Web Designer",
       company: "The Dangling Modifier",
+      companyLink: "https://danglingmodifier.psu.edu/",
       location: "University Park, PA",
       period: "January 2025 – Present",
       description: "Lead the redesign and modernization of the publication's website using HTML, CSS, and JavaScript. Improved average session duration by 25% and increased accessibility from 70% to 95% through responsive, inclusive design practices. Work closely with editorial contributors to ensure visual consistency, usability, and alignment with branding goals.",
@@ -34,6 +37,7 @@ export default function Experience() {
     {
       title: "AI Consultant",
       company: "The Bata Corporation",
+      companyLink: "https://www.bata.com/",
       location: "Delhi, India",
       period: "May 2025 – July 2025",
       description: "Designed enterprise AI use cases supported by proof-of-concept documentation, vendor evaluations, and cost–benefit analyses. Assessed integration of AI tools within existing business workflows to identify efficiency and knowledge-sharing improvements. Secured $80,000 in executive-approved funding for pilot AI deployments supporting internal operations.",
@@ -41,6 +45,7 @@ export default function Experience() {
     {
       title: "Research Assistant",
       company: "Center for Socially Responsible AI",
+      companyLink: "http://amulyayadav.com/research.html",
       location: "University Park, PA",
       period: "August 2024 – Present",
       description: "Developed a Python-based fairness evaluation pipeline integrating bias detection, mitigation, and explainability methods. Optimized interpretable machine learning models, improving fairness and recall by 18% while preserving transparency. Conducted automated error analysis to support responsible and accountable ML deployment.",
@@ -56,7 +61,7 @@ export default function Experience() {
         <div className="mb-8 sm:mb-12 md:mb-16">
           <SectionHeading delay={0.1}>Experience</SectionHeading>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-12">
+        <div className="grid grid-cols-1 gap-6 sm:gap-8 md:gap-10 lg:gap-12">
           {experiences.map((exp, index) => (
             <motion.article
               key={index}
@@ -71,7 +76,19 @@ export default function Experience() {
                   {exp.title}
                 </h3>
                 <p className="text-base sm:text-lg md:text-xl font-medium text-gray-800 dark:text-gray-300 mb-1">
-                  {exp.company}
+                  {exp.companyLink ? (
+                    <a
+                      href={exp.companyLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:opacity-70 transition-opacity inline-flex items-center gap-1"
+                    >
+                      {exp.company}
+                      <span className="text-xs">↗</span>
+                    </a>
+                  ) : (
+                    exp.company
+                  )}
                 </p>
                 <p className="text-sm sm:text-base md:text-lg text-gray-600 dark:text-gray-500 mb-2">
                   {exp.location}

@@ -5,8 +5,8 @@ import Section from "./Section";
 import SectionHeading from "./SectionHeading";
 
 /**
- * Publications section - Research and writing
- * Shows upcoming publications
+ * Research section - Research work
+ * Shows current research projects
  */
 export default function Publications() {
   return (
@@ -16,7 +16,7 @@ export default function Publications() {
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20 relative z-10">
         <div className="mb-12 md:mb-16">
-          <SectionHeading delay={0.1}>Publications</SectionHeading>
+          <SectionHeading delay={0.1}>Research</SectionHeading>
         </div>
         <motion.div
           initial={{ opacity: 0, y: 15 }}
@@ -25,7 +25,7 @@ export default function Publications() {
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           <p className="text-lg md:text-xl leading-[1.75] text-near-black dark:text-dark-text font-sans">
-            incoming.. (i am working on a research related to AI4SG collaborations)
+            Building and evaluating a computational framework that identifies rare immune cell populations in scRNA-seq data using outlier-aware clustering, and showing how it differs from standard clustering.
           </p>
         </motion.div>
       </div>
