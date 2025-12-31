@@ -18,6 +18,28 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   title: "Devanshi Gupta",
   description: "Third year Computer Science student at Penn State. Building AI solutions and data systems. President of HackPSU.",
+  openGraph: {
+    title: "Devanshi Gupta",
+    description: "Third year Computer Science student at Penn State. Building AI solutions and data systems. President of HackPSU.",
+    url: "https://devanshigupta.com",
+    siteName: "Devanshi Gupta",
+    images: [
+      {
+        url: "https://devanshigupta.com/preview%20image.png",
+        width: 1200,
+        height: 630,
+        alt: "Devanshi Gupta",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Devanshi Gupta",
+    description: "Third year Computer Science student at Penn State. Building AI solutions and data systems. President of HackPSU.",
+    images: ["https://devanshigupta.com/preview%20image.png"],
+  },
 };
 
 export const viewport: Viewport = {
