@@ -22,11 +22,6 @@ export default function SelectedWork() {
         "Developed a centralized dashboard to analyze article structure, publishing frequency, and coverage trends. Automated reporting workflows, reducing manual analysis effort for editorial staff. Surfaced data-driven insights into newsroom production bottlenecks and content strategy.",
     },
     {
-      title: "Responsible Machine Learning Research",
-      description:
-        "Built a Python-based fairness evaluation pipeline integrating bias detection and mitigation techniques for responsible ML deployment. Optimized interpretable classifiers, improving fairness and recall by 18% while maintaining model transparency. Integrated explainability modules and automated error analysis to support data-driven model refinement.",
-    },
-    {
       title: "Bureaucracy Buddy",
       description:
         "Designed an AI-powered assistant to simplify complex paperwork and form completion through guided, conversational workflows. Translated bureaucratic processes into clear, step-by-step user experiences to reduce confusion and user friction. Focused on accessibility, usability, and human-centered design to make administrative tasks more approachable.",

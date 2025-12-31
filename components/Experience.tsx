@@ -18,13 +18,6 @@ export default function Experience() {
       description: "Lead Penn State's largest student-run hackathon, setting strategic direction and overseeing end-to-end operations for 800+ participants per semester. Manage and mentor a 10+ person executive board across education, sponsorship, logistics, and outreach teams. Drive partnerships with campus organizations and industry sponsors to expand technical access, programming quality, and event scale.",
     },
     {
-      title: "Director of Education",
-      company: "HackPSU",
-      location: "University Park, PA",
-      period: "May 2025 – Present",
-      description: "Lead the design and execution of HackPSU's technical education initiatives, including workshops and pre-event programming. Coordinate curriculum development, instructor onboarding, and session delivery to ensure high-quality, accessible learning experiences. Align educational content with hackathon goals to improve participant preparedness and engagement.",
-    },
-    {
       title: "Business Insights Staff",
       company: "The Daily Collegian",
       location: "University Park, PA",
@@ -51,20 +44,6 @@ export default function Experience() {
       location: "University Park, PA",
       period: "August 2024 – Present",
       description: "Developed a Python-based fairness evaluation pipeline integrating bias detection, mitigation, and explainability methods. Optimized interpretable machine learning models, improving fairness and recall by 18% while preserving transparency. Conducted automated error analysis to support responsible and accountable ML deployment.",
-    },
-    {
-      title: "Course Designer",
-      company: "Penn State College of Engineering",
-      location: "University Park, PA",
-      period: "March 2025 – May 2025",
-      description: "Collaborated with faculty to design and refine instructional materials for an undergraduate Theory of Computation course. Created structured problem sets, lecture slides, and assessments covering automata, formal languages, Turing machines, and decidability. Focused on clarity, rigor, and student comprehension in complex theoretical topics.",
-    },
-    {
-      title: "English Writing Tutor",
-      company: "The Writing Center @ Penn State",
-      location: "University Park, PA",
-      period: "May 2024 – Present",
-      description: "Provide individualized tutoring and workshop facilitation to support students across disciplines in academic and professional writing. Guide students through drafting, revision, and argument development to improve clarity and structure. Adapt feedback strategies to diverse writing goals, learning styles, and proficiency levels.",
     },
   ];
 
