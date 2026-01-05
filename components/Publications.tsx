@@ -25,7 +25,7 @@ export default function Publications() {
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           <p className="text-lg md:text-xl leading-[1.75] text-near-black dark:text-dark-text font-sans">
-            Building and evaluating a computational framework that identifies rare immune cell populations in scRNA-seq data using outlier-aware clustering, and showing how it differs from standard clustering.
+            Building and evaluating a computational framework that identifies rare immune cell populations in scRNA-seq data using outlier-aware clustering and demonstrating how it differs from standard clustering.
           </p>
         </motion.div>
       </div>

@@ -23,13 +23,13 @@ export default function Closing() {
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
           <p className="text-lg md:text-xl leading-[1.75] font-sans">
-            <span className="text-near-black dark:text-dark-text">i&apos;m always looking for collaborators interested in </span>
-            <span className="bg-gradient-to-r from-coral to-rose bg-clip-text text-transparent font-semibold">ai strategy</span>
+            <span className="text-near-black dark:text-dark-text">I&apos;m always looking for collaborators interested in </span>
+            <span className="bg-gradient-to-r from-coral to-rose bg-clip-text text-transparent font-semibold">AI strategy</span>
             <span className="text-near-black dark:text-dark-text">, </span>
             <span className="bg-gradient-to-r from-lavender to-sage bg-clip-text text-transparent font-semibold">responsible machine learning</span>
             <span className="text-near-black dark:text-dark-text">, and </span>
             <span className="bg-gradient-to-r from-amber to-sunset bg-clip-text text-transparent font-semibold">data systems</span>
-            <span className="text-near-black dark:text-dark-text">. reach out to me via email at devanshi.gpt16@gmail.com</span>
+            <span className="text-near-black dark:text-dark-text">. Reach out to me via email at devanshi.gpt16@gmail.com</span>
           </p>
         </motion.div>
       </div>

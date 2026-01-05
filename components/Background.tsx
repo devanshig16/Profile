@@ -28,7 +28,7 @@ export default function Background() {
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           <span className="text-near-black dark:text-dark-text">I&apos;m currently a </span>
-          <span className="bg-gradient-to-r from-terracotta to-amber bg-clip-text text-transparent font-semibold">third year Computer Science student</span>
+          <span className="bg-gradient-to-r from-terracotta to-amber bg-clip-text text-transparent font-semibold">third-year Computer Science student</span>
           <span className="text-near-black dark:text-dark-text"> at </span>
           <span className="bg-gradient-to-r from-sage to-ocean bg-clip-text text-transparent font-semibold">Penn State University</span>
           <span className="text-near-black dark:text-dark-text">, with a GPA of 3.62/4.0. My relevant coursework includes Data Structures & Algorithms, Design of Algorithms, Machine Learning, and Web Development.</span>
@@ -46,7 +46,7 @@ export default function Background() {
           <span className="bg-gradient-to-r from-amber to-sunset bg-clip-text text-transparent font-semibold">research</span>
           <span className="text-near-black dark:text-dark-text">, and </span>
           <span className="bg-gradient-to-r from-sage to-ocean bg-clip-text text-transparent font-semibold">web development</span>
-          <span className="text-near-black dark:text-dark-text"> — from securing $80K in AI funding at Bata to building analytics dashboards at The Daily Collegian.</span>
+          <span className="text-near-black dark:text-dark-text"> — from securing $80,000 in AI funding at Bata to building analytics dashboards at The Daily Collegian.</span>
         </motion.p>
       </div>
     </Section>

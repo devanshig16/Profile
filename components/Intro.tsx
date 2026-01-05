@@ -33,7 +33,7 @@ export default function Intro() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
             >
-              i&apos;m a third year penn state cs major interested in ai strategy, responsible machine learning, and building data systems that make complex information accessible. i&apos;m currently president of HackPSU, penn state&apos;s largest student-run hackathon, and i work on ai consulting, research, and web development projects.
+              I&apos;m a third-year Penn State CS major interested in AI strategy, responsible machine learning, and building data systems that make complex information accessible. I&apos;m currently president of HackPSU, Penn State&apos;s largest student-run hackathon, and I work on AI consulting, research, and web development projects.
             </motion.p>
             <motion.p
               className="text-base sm:text-lg md:text-xl leading-[1.75] text-near-black dark:text-dark-text font-sans"
@@ -42,7 +42,7 @@ export default function Intro() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              i also build websites and write poetry in my spare time, and i enjoy public speaking and mentoring. i&apos;m currently working at The Daily Collegian building analytics dashboards, and i also help with research at the Center for Socially Responsible AI.
+              I also build websites and write poetry in my spare time, and I enjoy public speaking and mentoring. I&apos;m currently working at The Daily Collegian building analytics dashboards, and I also help with research at the Center for Socially Responsible AI.
             </motion.p>
           </div>
 
