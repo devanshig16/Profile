@@ -24,6 +24,17 @@ export default function Publications() {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
+          <p className="text-lg md:text-xl leading-[1.75] text-near-black dark:text-dark-text font-sans mb-4">
+            <a
+              href="https://www.biorxiv.org/content/10.64898/2026.01.12.699092v1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gradient-to-r from-lavender to-rose bg-clip-text text-transparent font-semibold hover:opacity-80 transition-opacity inline-flex items-center gap-1"
+            >
+              Outlier Detection in Single-Cell Transcriptomics Reveals Disease-Enriched Cytotoxic Immune Populations
+              <span className="text-xs">↗</span>
+            </a>
+          </p>
           <p className="text-lg md:text-xl leading-[1.75] text-near-black dark:text-dark-text font-sans">
             Building and evaluating a computational framework that identifies rare immune cell populations in scRNA-seq data using outlier-aware clustering and demonstrating how it differs from standard clustering.
           </p>
